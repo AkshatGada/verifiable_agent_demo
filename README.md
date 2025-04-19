@@ -1,6 +1,6 @@
-# Verifiable AI Agent Framework
+# Verifiable AI Agent Framework : Version 0 
 
-## Why We Built This Framework
+# Why We Built This Framework
 
 As AI agents become integral parts of decentralized applications, ensuring their actions and data inputs are transparent, tamper‑proof, and auditable is critical. This framework provides a step‑by‑step pipeline that:
 
@@ -10,13 +10,83 @@ As AI agents become integral parts of decentralized applications, ensuring their
 
 By integrating these components, we create a bullet‑proof provenance trail—from raw data ingestion through signed credentials to immutable blockchain records.
 
-## What We've Achieved
+## The Critical Need for Verifiable AI
 
-- **GitHub Agent**: A custom AI agent that fetches and summarizes README files from arbitrary GitHub repositories.
-- **Identity Registry**: A Solidity smart contract (`IdentityRegistry`) that records agent DIDs and associated claims on‑chain.
-- **Input Validation**: Deterministic hashing of input data into an `inputRoot`, issuance of a W3C Verifiable Credential, and anchoring of that root on‑chain.
+The rapid proliferation of AI agents across industries has created an urgent need for trustworthy systems that can be verified without relying on blind trust. As AI agents increasingly handle sensitive tasks autonomously, several critical challenges emerge:
 
-Together, these pieces form a fully decentralized, end‑to‑end verifiable protocol for AI agents on blockchain.
+### Trust Without Transparency Isn't Trust
+
+Today's AI systems operate as black boxes, making decisions with little visibility into their data sources, reasoning processes, or execution pathways. This lack of transparency creates significant risks:
+
+- **Data integrity cannot be guaranteed** without verifiable proof of what information an AI agent consumed
+- **Accountability becomes impossible** when there's no cryptographic trail of an agent's actions
+- **Attribution is challenging** without verifiable agent identities tied to responsible entities
+
+### Preventing Sophisticated Attacks
+
+Our framework directly addresses several critical vulnerabilities that plague current AI agent deployments:
+
+1. **Knowledge Base Poisoning**: By cryptographically verifying input data through deterministic hashing and on-chain anchoring, we prevent attackers from manipulating the sources that inform agent decisions
+
+2. **Memory and Context Manipulation**: Our execution logging and Merkle-tree commitment approach creates tamper-evident records that prevent attackers from exploiting agent memory mechanisms
+
+3. **Orchestration Exploitation**: By establishing verifiable identities through DIDs and anchoring them on-chain, we prevent confused deputy attacks where malicious actors trick trusted agents into performing harmful tasks
+
+4. **Impact Chain Vulnerabilities**: Our system isolation approach with cryptographic boundaries helps contain potential breaches and prevent cascading failures across interconnected systems
+
+## Verifiability as the Foundation of Trusted AI
+
+Verifiability serves as the missing piece in the AI ecosystem, enabling agents to operate with unprecedented levels of trust:
+
+- **Transparent Decision Trails**: Our framework enables users to backtrace exactly how an AI agent arrived at its conclusions, creating accountability for every action
+
+- **Provable Authenticity**: Through cryptographic proofs, we demonstrate that agent actions are genuinely autonomous and not manipulated by hidden human operators—essential for establishing trusted agentic systems
+
+- **Immutable Reputation**: By anchoring agent identities and attestations on-chain, we create an indelible record of agent behavior that builds cumulative trust over time
+
+- **Cross-System Trust**: Our verifiable credentials approach allows AI agents to interact across organizational boundaries with cryptographically verifiable trust, eliminating silos
+
+As AI agents increasingly operate in high-stakes environments, this framework provides the essential verification layer that transforms AI from a black box into a transparent, auditable system worthy of trust. By establishing unbroken chains of verifiable evidence from raw inputs to final outputs, we're building the foundation for a new generation of AI systems that can be trusted to operate autonomously without sacrificing transparency, security, or accountability.
+
+---
+
+# 🎯 What We've Achieved (Start to Finish)
+
+1. **GitHub Agent Initialization**
+   - Built a custom AI agent on the Sentient Agent Framework that fetches and summarizes README files from arbitrary GitHub repositories.
+
+2. **Cryptographic Agent Identity**
+   - Generated a did:key:… DID for the agent and securely stored its JWK keypair.
+
+3. **Foundational On‑Chain Attestation**
+   - Anchored the agent's DID on‑chain via a claim in the IdentityRegistry smart contract, binding agent identity to your Ethereum address.
+
+4. **Deterministic Input‑Root Computation**
+   - Fetched each README, SHA‑256‑hashed its contents, sorted the hashes, and produced a single inputRoot digest.
+
+5. **Input‑Root Verifiable Credential**
+   - Wrapped the inputRoot in a W3C‑compliant Verifiable Credential and signed it with the agent's DID using DIDKit.
+
+6. **Input‑Root On‑Chain Anchoring**
+   - Published the same inputRoot hash under keccak256(agentDID) in the IdentityRegistry contract for immutable public proof.
+
+7. **Execution‑Level Logging**
+   - Instrumented every agent step—prompts, tool calls, LLM inputs/outputs—with timestamped, hashed log entries.
+
+8. **Merkle‑Tree Construction**
+   - Built a Merkle tree over all execution‑log hashes to compute a single executionRoot that commits to the entire session.
+
+9. **Decentralized Trace Storage**
+   - Published the full execution trace and Merkle‑tree data to IPFS, yielding immutable CIDs for auditor retrieval.
+
+10. **Execution‑Root Verifiable Credential**
+    - Packaged the executionRoot in a W3C‑Verifiable Credential and signed it with the agent's DID.
+
+11. **Execution‑Root On‑Chain Anchoring**
+    - Recorded the executionRoot hash on‑chain in the IdentityRegistry, extending your proof ledger to cover runtime behavior.
+
+12. **Zero‑Knowledge Verification**
+    - Generated a zk‑SNARK proof that the Merkle tree was constructed correctly, and deployed a Solidity verifier to confirm the proof both off‑chain and on‑chain.
 
 ---
 
@@ -162,6 +232,7 @@ python scripts/verify_onchain.py
 
 > By following these steps, you have a fully decentralized, transparent, and verifiable pipeline for your AI agent—from data ingestion to on‑chain proof.
 
+---
 
 ## Results in terminal 
  <img width="1511" alt="Screenshot 2025-04-19 at 5 58 10 AM" src="https://github.com/user-attachments/assets/15a82fd6-189d-45b7-a6a6-572536f4d36c" />
