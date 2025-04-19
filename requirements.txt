@@ -1,0 +1,16 @@
+sentient-agent-framework>=0.2.0
+
+openai>=1.13.3
+tiktoken>=0.6.0       
+
+faiss-cpu>=1.8.0
+
+langchain>=0.1.18
+requests>=2.31.0
+
+python-dotenv>=1.0.1
+rich>=13.7.1
+
+didkit>=0.8.1
+web3>=6.15.0
+python-dotenv>=1.0.1     

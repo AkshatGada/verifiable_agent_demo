@@ -1,0 +1,49 @@
+# ── Python ──────────────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+.venv/
+venv/
+ENV/
+env/
+
+# Distribution / packaging
+build/
+dist/
+*.egg-info/
+
+# Test & coverage
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Mypy
+.mypy_cache/
+
+# Logs
+*.log
+
+# ── Secrets & env ───────────────────────────────────────────────────
+.env
+.env.*.local
+.agent_key.jwk
+
+# ── Node / Hardhat ───────────────────────────────────────────────────
+node_modules/
+cache/
+artifacts/
+typechain/
+
+# ── Future folders (input‑root proofs, etc.) ─────────────────────────
+proofs/
+
+# ── IDEs / Editors / OS junk ────────────────────────────────────────
+.vscode/
+.idea/
+*.sublime-*
+.DS_Store
+Thumbs.db
+Desktop.ini
+*~
