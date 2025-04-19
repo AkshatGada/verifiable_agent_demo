@@ -162,4 +162,14 @@ python scripts/verify_onchain.py
 
 > By following these steps, you have a fully decentralized, transparent, and verifiable pipeline for your AI agent—from data ingestion to on‑chain proof.
 
-Implementation flow 
+
+## Results in terminal 
+ <img width="1511" alt="Screenshot 2025-04-19 at 5 58 10 AM" src="https://github.com/user-attachments/assets/15a82fd6-189d-45b7-a6a6-572536f4d36c" />
+ &nbsp;
+<img width="1511" alt="Screenshot 2025-04-19 at 5 59 22 AM" src="https://github.com/user-attachments/assets/d0f9e505-9b90-4f80-b876-cba148db08e6" />
+&nbsp;
+<img width="1511" alt="Screenshot 2025-04-19 at 6 00 09 AM" src="https://github.com/user-attachments/assets/6c81a7c2-1155-436f-a4d2-2ad547ab3fa7" />
+&nbsp;
+<img width="1026" alt="Screenshot 2025-04-19 at 5 57 20 AM" src="https://github.com/user-attachments/assets/54c588cb-75ee-48ad-8d9f-759b3876e57c" />
+&nbsp;
+<img width="1511" alt="Screenshot 2025-04-19 at 7 44 33 AM" src="https://github.com/user-attachments/assets/454d2a14-917a-4502-a8f5-8d523bdf2ce1" />
