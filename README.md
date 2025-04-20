@@ -12,8 +12,6 @@ By integrating these components, we create a bullet‑proof provenance trail—f
 
 ## The Critical Need for Verifiable AI
 
-The rapid proliferation of AI agents across industries has created an urgent need for trustworthy systems that can be verified without relying on blind trust. As AI agents increasingly handle sensitive tasks autonomously, several critical challenges emerge:
-
 ### Trust Without Transparency Isn't Trust
 
 Today's AI systems operate as black boxes, making decisions with little visibility into their data sources, reasoning processes, or execution pathways. This lack of transparency creates significant risks:
@@ -21,18 +19,6 @@ Today's AI systems operate as black boxes, making decisions with little visibili
 - **Data integrity cannot be guaranteed** without verifiable proof of what information an AI agent consumed
 - **Accountability becomes impossible** when there's no cryptographic trail of an agent's actions
 - **Attribution is challenging** without verifiable agent identities tied to responsible entities
-
-### Preventing Sophisticated Attacks
-
-Our framework directly addresses several critical vulnerabilities that plague current AI agent deployments:
-
-1. **Knowledge Base Poisoning**: By cryptographically verifying input data through deterministic hashing and on-chain anchoring, we prevent attackers from manipulating the sources that inform agent decisions
-
-2. **Memory and Context Manipulation**: Our execution logging and Merkle-tree commitment approach creates tamper-evident records that prevent attackers from exploiting agent memory mechanisms
-
-3. **Orchestration Exploitation**: By establishing verifiable identities through DIDs and anchoring them on-chain, we prevent confused deputy attacks where malicious actors trick trusted agents into performing harmful tasks
-
-4. **Impact Chain Vulnerabilities**: Our system isolation approach with cryptographic boundaries helps contain potential breaches and prevent cascading failures across interconnected systems
 
 ## Verifiability as the Foundation of Trusted AI
 
@@ -43,10 +29,6 @@ Verifiability serves as the missing piece in the AI ecosystem, enabling agents t
 - **Provable Authenticity**: Through cryptographic proofs, we demonstrate that agent actions are genuinely autonomous and not manipulated by hidden human operators—essential for establishing trusted agentic systems
 
 - **Immutable Reputation**: By anchoring agent identities and attestations on-chain, we create an indelible record of agent behavior that builds cumulative trust over time
-
-- **Cross-System Trust**: Our verifiable credentials approach allows AI agents to interact across organizational boundaries with cryptographically verifiable trust, eliminating silos
-
-As AI agents increasingly operate in high-stakes environments, this framework provides the essential verification layer that transforms AI from a black box into a transparent, auditable system worthy of trust. By establishing unbroken chains of verifiable evidence from raw inputs to final outputs, we're building the foundation for a new generation of AI systems that can be trusted to operate autonomously without sacrificing transparency, security, or accountability.
 
 ---
 
