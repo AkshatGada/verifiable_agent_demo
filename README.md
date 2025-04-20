@@ -243,4 +243,3 @@ python scripts/verify_onchain.py
 &nbsp;
 <img width="1026" alt="Screenshot 2025-04-19 at 5 57 20 AM" src="https://github.com/user-attachments/assets/54c588cb-75ee-48ad-8d9f-759b3876e57c" />
 &nbsp;
-<img width="1511" alt="Screenshot 2025-04-19 at 7 44 33 AM" src="https://github.com/user-attachments/assets/454d2a14-917a-4502-a8f5-8d523bdf2ce1" />
