@@ -3,5 +3,9 @@
   "devDependencies": {
     "@nomicfoundation/hardhat-toolbox": "^5.0.0",
     "hardhat": "^2.23.0"
+  },
+  "dependencies": {
+    "circom": "^0.5.46",
+    "circomlib": "^2.0.5"
   }
 }

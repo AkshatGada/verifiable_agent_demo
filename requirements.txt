@@ -14,3 +14,7 @@ rich>=13.7.1
 didkit>=0.8.1
 web3>=6.15.0
 python-dotenv>=1.0.1     
+
+ipfshttpclient         
+merkletools            
+python-dateutil 
