@@ -52,6 +52,9 @@ As AI agents increasingly operate in high-stakes environments, this framework pr
 
 # 🎯 What We've Achieved (Start to Finish)
 
+
+<img width="1319" alt="image" src="https://github.com/user-attachments/assets/38ba2704-394b-4405-82b6-e65ecc99c993" />
+
 1. **GitHub Agent Initialization**
    - Built a custom AI agent on the Sentient Agent Framework that fetches and summarizes README files from arbitrary GitHub repositories.
 
