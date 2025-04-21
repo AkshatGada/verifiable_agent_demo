@@ -1,15 +1,5 @@
 # Verifiable AI Agent Framework : Version 0 
 
-# Why We Built This Framework
-
-As AI agents become integral parts of decentralized applications, ensuring their actions and data inputs are transparent, tamper‑proof, and auditable is critical. This framework provides a step‑by‑step pipeline that:
-
-1. **Identifies** AI agents with cryptographically verifiable DIDs.
-2. **Anchors** agent identities and reputation on a blockchain-based registry.
-3. **Validates** and commits input data (e.g., GitHub README files) via off‑chain hashing, verifiable credentials, and on‑chain anchoring.
-
-By integrating these components, we create a bullet‑proof provenance trail—from raw data ingestion through signed credentials to immutable blockchain records.
-
 ## The Critical Need for Verifiable AI
 
 ### Trust Without Transparency Isn't Trust
